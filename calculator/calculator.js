@@ -14,16 +14,22 @@ function multiply (array) {
 	var sum=1;
     for (var i=0; i<array.length; i++) {
         sum = sum * array[i];
-}    return sum;
-
-
-function power() {
-	
+    } 
+    return sum;
 }
 
-function factorial() {
-	
+function power(number, times) {
+    return Math.pow(number, times);
 }
+
+function factorial(n) {
+	if (n == 0) return 1;
+	let product = 1;
+	for (let i = n; i > 0; i--) {
+	  product *= i;
+	}
+	return product;
+} 
 
 module.exports = {
 	add,
