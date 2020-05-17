@@ -10,9 +10,12 @@ function sum (array) {
 	return array.reduce((total, current) => total + current, 0);
 }
 
-function multiply () {
-	
-}
+function multiply (array) {
+	var sum=1;
+    for (var i=0; i<array.length; i++) {
+        sum = sum * array[i];
+}    return sum;
+
 
 function power() {
 	
